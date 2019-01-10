@@ -1406,6 +1406,7 @@ static void initialize_tun(void)
 #define DEV_MAC 0x00aaaaaaaaaa
 static void initialize_netdevices(void)
 {
+	return;
 #if SYZ_EXECUTOR
 	if (!flag_enable_net_dev)
 		return;
