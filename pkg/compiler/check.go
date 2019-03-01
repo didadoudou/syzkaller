@@ -505,6 +505,7 @@ type structDir struct {
 
 func (comp *compiler) checkConstructors() {
 	ctors := make(map[string]bool) // resources for which we have ctors
+	// TODO: remember syscalls in another map saved to compiler
 	checked := make(map[structDir]bool)
 	for _, decl := range comp.desc.Nodes {
 		switch n := decl.(type) {
